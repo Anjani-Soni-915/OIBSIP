@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+
+.background{
+    display: flex;
+    align-items: center;
+    min-height: 500px;
+    background-image:url(../img/bg2.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
+body{
+    margin:0;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 2em;
+    color: #fff;
+} 
+
+
+
+/* .title .content {
+    display: flex;
+    flex-wrap:wrap;
+    top: 20%;
+    left: 50%;
+    transform: translate(-20%,-20%);
+    
+    font-size: 2em;
+    margin-bottom: 2em;
+    justify-content: center; 
+    align-items:center; 
+    color: rgb(184, 179, 179);
+    padding: 3rem 0;
+
+} */
+
+.units{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 300px;
+}
+
+.panels{
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(206, 206, 201, 0.911);
+    min-width: 10rem;
+    height: 8em;
+    position: relative;
+}
+
+.panels:nth-child(1){
+    background: rgb(184, 27, 6);
+}
+
+.panels:nth-child(2){
+    background: rgb(4, 7, 185);
+}
+
+.panels:nth-child(3){
+    background: rgb(48, 228, 12);
+}
+
+.bg-unit{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 7em;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.panels:nth-child(1) .bg-unit{
+   color:#ff4b4b;
+}
+
+.panels:nth-child(2) .bg-unit{
+    color:#537eff;
+}
+
+ .panels:nth-child(3) .bg-unit{
+    color:#7ffc4e;
+}
+
+.panels h2, .panels input{
+    position: relative;
+}
+
+.panels h2{
+    text-align: left;
+    padding-left: 1.5em;
+    font-size:1em ;
+}
+
+/* removing default arrows from the input field  */
+
+.panels input::-webkit-outer-spin-button,
+.panels input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin:0;
+}
+
+.panels input{
+    border: none;
+    background: none;
+    margin-top: 0.5em;
+    width: 4em;
+    height: 2em;
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+
+.panels input:focus{
+    outline: none;
+} 
+
